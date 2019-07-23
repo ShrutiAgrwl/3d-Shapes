@@ -53,7 +53,7 @@ var dodecahedron = new THREE.DodecahedronGeometry(1);
 
 var obj = new THREE.Mesh(cube, material);
 scene.add(obj);
-obj.position.set(0, 0.5, -6);
+obj.position.set(0, 0, -6);
 var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('canvas'), antialias: true});
 renderer.setSize(window.innerWidth, window.innerHeight);
 
@@ -68,7 +68,7 @@ function change(event){
 	scene.remove(obj);
 	obj = new THREE.Mesh(x, material);
 	scene.add(obj);
-	obj.position.set(0, 0.5, -6);
+	obj.position.set(0, 0, -6);
 
 
 
